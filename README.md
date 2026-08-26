@@ -31,8 +31,9 @@ the wrong thing; collecting real captures meant the impairments were real too.
 > Processing and Communications Applications Conference (**SIU 2026**)
 >
 > 📄 G. Deliktaş, E. Arslan, H. Polat, L. Özkan and S. B. Edibali,
-> *"A Deep Learning Approach for SDR-Based Automatic Modulation
-> Classification,"* in Proc. IEEE 34th SIU, 2026. — IEEE Xplore
+> [**"A Deep Learning Approach for SDR-Based Automatic Modulation Classification"**](https://ieeexplore.ieee.org/document/11636794),
+> in Proc. IEEE 34th SIU, 2026.
+> [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Read%20the%20paper-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11636794)
 
 ### 📡 RF and SATCOM engineering tools
 
@@ -74,7 +75,7 @@ be most of engineering.
 
 ## Get in touch
 
-📧 <guvendeliktas@gmail.com> · 💼 [linkedin.com/in/guven-deliktas](https://linkedin.com/in/guven-deliktas)
+📧 <guvendeliktas@gmail.com> · 💼 [linkedin.com/in/guven-deliktas](https://www.linkedin.com/in/guven-deliktas) · 📄 [IEEE Xplore](https://ieeexplore.ieee.org/document/11636794)
 
 Open to roles in RF systems, wireless communications and applied machine
 learning — and always happy to talk about any of the above.
