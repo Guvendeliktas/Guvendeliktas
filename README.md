@@ -1,64 +1,90 @@
 # Güven Deliktaş
 
-RF and satellite communications engineering — link budgets, cascade power
-analysis, and the tooling around them.
+**Electronics engineer working where deep learning meets wireless communications.**
 
-Most of what I build starts the same way: a calculation that lives in a
-spreadsheet and a drawing that lives in someone's head, neither of which can be
-checked. I like turning those into something with a test suite.
+I came into this from the RF side — spectrum analysers, IQ captures, link
+budgets — and kept running into the same wall: the interesting problems in
+wireless are the ones where the signal is messy and the model has to figure it
+out anyway. So I spend my time on both halves. SDR and modulation on one side,
+neural networks on the other, and the plumbing that makes them meet.
 
----
-
-### 🛰 [satcom-link-budget](https://github.com/Guvendeliktas/satcom-link-budget) · MATLAB, Python
-
-Ground-station link budget analysis with an automated Word report generator.
-Slant range, FSPL, atmospheric and rain attenuation (ITU-R P.837/P.838/P.839),
-system noise temperature, G/T, C/N₀, Eb/N₀ and margin — plus elevation sweeps,
-LEO pass profiles and BER curves.
-
-Verified against an independent reference calculation to **≤ 0.005 dB** across
-69 numerical checks. Two deliberate deviations from the reference convention are
-named, pinned by tests, and stated in every generated report.
-
-### 📈 [rf-level-diagram](https://github.com/Guvendeliktas/rf-level-diagram) · Python, PySide6
-
-Cascade power budget for SATCOM earth stations. The model is a **DAG, not a
-flat chain** — polarisation, band splits, coupler monitor ports and A/B
-redundancy are first-class.
-
-To trust the engine I wrote a second, independent solver and compared them:
-**13/13 nodes identical to the bit**, and `0.000e+00 dB` deviation across 300
-randomised graph orderings. The noise chain reproduces a published antenna
-datasheet's G/T of **37.1 dB/K** exactly. That verification round also caught a
-real physics violation — a third cable on a two-output splitter was duplicating
-power, so a chain fed 0 dBm produced +1.22 dBm. 1058 tests.
-
-### 🔧 [rf-block-diagram](https://github.com/Guvendeliktas/rf-block-diagram) · Python, PySide6
-
-Editor for RF block and cabling diagrams — component library, right-angle cable
-routing, connectors drawn per **IEEE Std 315**, multi-page documents, and
-title-blocked vector PDF from A4 to A0.
-
-The layer that decides *what things look like* imports no Qt at all, which is
-why 1011 tests run without a screen.
+The other thing I keep doing: turning calculations that live in spreadsheets and
+drawings that live in someone's head into tools with a test suite. Three of them
+are below.
 
 ---
 
-### How I work
+## What I've worked on
 
-- **No silent zeros.** A missing input produces "not computable", never a
-  number. The absence of a result and a result of zero are different things.
-- **Warn, don't refuse.** Tools should report problems, not block the engineer
-  who understands their own system better than the tool does.
-- **Verify against something outside the code.** A manufacturer datasheet, an
-  independent solver, a second implementation — anything that doesn't share the
-  original's assumptions.
+### 🧠 Automatic modulation classification from real over-the-air signals
 
-### Stack
+My senior project, and the piece of work I'm most attached to. A full **TX–RX
+pipeline built with SDR and LabVIEW**: transmit, capture, and label real
+over-the-air IQ data across **24 modulation schemes** (ASK, PSK, FSK, QAM and
+OFDM subchannels), then train a **dual-stream ResNet** on it — **~94 %
+classification accuracy**.
 
-`Python` · `PySide6/Qt` · `MATLAB` · `SQLite` · `pytest` · `python-docx` ·
-`NumPy` · RF/microwave systems · ITU-R propagation models
+The part that mattered was the dataset. Synthetic IQ is easy and teaches a model
+the wrong thing; collecting real captures meant the impairments were real too.
 
-### Contact
+> 🏆 **Third Place — Senior Design Project Competition**, 34th IEEE Signal
+> Processing and Communications Applications Conference (**SIU 2026**)
+>
+> 📄 G. Deliktaş, E. Arslan, H. Polat, L. Özkan and S. B. Edibali,
+> *"A Deep Learning Approach for SDR-Based Automatic Modulation
+> Classification,"* in Proc. IEEE 34th SIU, 2026. — IEEE Xplore
 
-<guvendeliktas@gmail.com>
+### 📡 RF and SATCOM engineering tools
+
+Built during an RF test and field engineering internship, then cleaned up and
+published here. Field work — link budget validation, spectrum analyser
+measurements, characterising signal patterns — kept feeding back into what the
+tools needed to do.
+
+| | |
+|---|---|
+| [**satcom-link-budget**](https://github.com/Guvendeliktas/satcom-link-budget) | Link budget analysis for LEO and GEO ground stations, with an automated Word report generator. ITU-R propagation models, elevation sweeps, BER curves. Verified to **≤ 0.005 dB** across 69 numerical checks. `MATLAB` `Python` |
+| [**rf-level-diagram**](https://github.com/Guvendeliktas/rf-level-diagram) | Cascade power budget as a **DAG, not a flat chain**. Validated against an independently written second solver — 13/13 nodes identical to the bit — and against a manufacturer datasheet's G/T. Caught a real physics violation in existing diagrams. **1058 tests.** `Python` `PySide6` |
+| [**rf-block-diagram**](https://github.com/Guvendeliktas/rf-block-diagram) | Editor for RF block and cabling diagrams; connectors drawn per IEEE Std 315, title-blocked vector PDF from A4 to A0. The layer deciding *what things look like* imports no Qt, so **1011 tests** run without a screen. `Python` `PySide6` |
+
+---
+
+## How I like to work
+
+- **No silent zeros.** A missing input produces *"not computable"*, never a
+  number. The absence of a result and a result of zero are different things, and
+  a tool that blurs them will eventually be believed.
+- **Verify against something outside the code.** A manufacturer datasheet, a
+  second implementation written from scratch, a measurement. Anything that
+  doesn't share the original's assumptions.
+- **Warn, don't refuse.** The engineer using the tool usually understands their
+  own system better than the tool does.
+
+## Background
+
+**B.Sc. Electronics Engineering** — Gebze Technical University, 2022–2026
+*Graduated with Honour Degree*
+
+**Erasmus+** — Politechnika Poznańska, Poland (Computing and Telecommunications)
+Machine learning, NLP and digital signal processing coursework.
+
+Also: industrial internships in data transmission pipelines and
+communication-device integration, and in PLC/automation basics — the
+unglamorous end of "getting equipment to talk to each other", which turns out to
+be most of engineering.
+
+## Tools
+
+**ML/Data** · PyTorch · NumPy · Pandas · scikit-learn · CNN/ResNet architectures · dataset creation & labelling
+**RF/Comms** · SDR & USRP · digital modulation (ASK/PSK/FSK/QAM/OFDM) · IQ acquisition & preprocessing · ITU-R P.618/P.676 · LEO & GEO link budgets
+**Test** · spectrum analyser · signal generator · LabVIEW · TX–RX test setup
+**Languages/Tools** · Python · MATLAB/Simulink · C · Git · LTspice
+
+🇹🇷 Turkish (native) · 🇬🇧 English (fluent) · 🇵🇱 Polish (beginner)
+
+## Get in touch
+
+📧 <guvendeliktas@gmail.com> · 💼 [linkedin.com/in/guven-deliktas](https://linkedin.com/in/guven-deliktas)
+
+Open to roles in RF systems, wireless communications and applied machine
+learning — and always happy to talk about any of the above.
