@@ -75,5 +75,4 @@ be most of engineering.
 
 📧 <guvendeliktas@gmail.com> · 💼 [linkedin.com/in/guven-deliktas](https://www.linkedin.com/in/guven-deliktas) · 📄 [IEEE Xplore](https://ieeexplore.ieee.org/document/11636794)
 
-Open to roles in RF systems, wireless communications and applied machine
-learning — and always happy to talk about any of the above.
+Always happy to talk about any of the above.
