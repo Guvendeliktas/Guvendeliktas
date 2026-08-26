@@ -66,12 +66,10 @@ be most of engineering.
 
 ## Tools
 
-**ML/Data** · PyTorch · NumPy · Pandas · scikit-learn · CNN/ResNet architectures · dataset creation & labelling
-**RF/Comms** · SDR & USRP · digital modulation (ASK/PSK/FSK/QAM/OFDM) · IQ acquisition & preprocessing · ITU-R P.618/P.676 · LEO & GEO link budgets
-**Test** · spectrum analyser · signal generator · LabVIEW · TX–RX test setup
-**Languages/Tools** · Python · MATLAB/Simulink · C · Git · LTspice
-
-🇹🇷 Turkish (native) · 🇬🇧 English (fluent) · 🇵🇱 Polish (beginner)
+- **ML / Data** — PyTorch · NumPy · Pandas · scikit-learn · CNN & ResNet architectures · dataset creation and labelling
+- **RF / Comms** — SDR & USRP · digital modulation (ASK/PSK/FSK/QAM/OFDM) · IQ acquisition and preprocessing · ITU-R P.618/P.676 · LEO & GEO link budgets
+- **Test & instrumentation** — spectrum analyser · signal generator · LabVIEW · TX–RX test setup
+- **Languages & tooling** — Python · MATLAB/Simulink · C · Git · LTspice
 
 ## Get in touch
 
