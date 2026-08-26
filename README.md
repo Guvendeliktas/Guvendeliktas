@@ -28,12 +28,17 @@ The part that mattered was the dataset. Synthetic IQ is easy and teaches a model
 the wrong thing; collecting real captures meant the impairments were real too.
 
 > 🏆 **Third Place — Senior Design Project Competition**, 34th IEEE Signal
-> Processing and Communications Applications Conference (**SIU 2026**)
+> Processing and Communications Applications Conference (**SIU 2026**).
+> Awarded to the final version of the project, described above.
 >
-> 📄 G. Deliktaş, E. Arslan, H. Polat, L. Özkan and S. B. Edibali,
-> [**"A Deep Learning Approach for SDR-Based Automatic Modulation Classification"**](https://ieeexplore.ieee.org/document/11636794),
+> 📄 **An earlier stage of this work** was published at the same conference:
+> G. Deliktaş, E. Arslan, H. Polat, L. Özkan and S. B. Edibali,
+> [*"A Deep Learning Approach for SDR-Based Automatic Modulation Classification"*](https://ieeexplore.ieee.org/document/11636794),
 > in Proc. IEEE 34th SIU, 2026.
 > [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Read%20the%20paper-00629B?logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11636794)
+>
+> *The figures above are from the final version; the paper reports the earlier
+> results it was built on.*
 
 ### 📡 RF and SATCOM engineering tools
 
