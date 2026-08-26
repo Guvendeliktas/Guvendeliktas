@@ -24,12 +24,19 @@ over-the-air IQ data across **24 modulation schemes** (ASK, PSK, FSK, QAM and
 OFDM subchannels), then train a **dual-stream ResNet** on it — **~94 %
 classification accuracy**.
 
+It also separates **single-carrier from multi-carrier** signals before
+classifying them, which is what made adding OFDM tractable: an OFDM symbol and a
+single-carrier one don't look alike in the first place, so asking one classifier
+to handle both was the wrong question.
+
 The part that mattered was the dataset. Synthetic IQ is easy and teaches a model
 the wrong thing; collecting real captures meant the impairments were real too.
 
 > 🏆 **Third Place — Senior Design Project Competition**, 34th IEEE Signal
 > Processing and Communications Applications Conference (**SIU 2026**).
-> Awarded to the final version of the project, described above.
+> Awarded to the final version described above, which extended the earlier work
+> with **QAM and OFDM** and with **single-carrier / multi-carrier
+> discrimination**.
 >
 > 📄 **An earlier stage of this work** was published at the same conference:
 > G. Deliktaş, E. Arslan, H. Polat, L. Özkan and S. B. Edibali,
