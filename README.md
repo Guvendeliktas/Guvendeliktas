@@ -15,7 +15,7 @@ tools with a test suite. Three of them are further down.
 
 ---
 
-## 🧠 Automatic modulation classification, over the air
+##  Automatic modulation classification, over the air
 
 My senior project. A complete SDR pipeline — generate, transmit, receive,
 classify — built on **USRP-2901 + LabVIEW + PyTorch**, classifying **24
