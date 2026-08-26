@@ -16,7 +16,7 @@ are below.
 
 ## What I've worked on
 
-### 🧠 Automatic modulation classification from real over-the-air signals
+###  Automatic modulation classification from real over-the-air signals
 
 My senior project, and the piece of work I'm most attached to. A full **TX–RX
 pipeline built with SDR and LabVIEW**: transmit, capture, and label real
@@ -49,16 +49,6 @@ tools needed to do.
 
 ---
 
-## How I like to work
-
-- **No silent zeros.** A missing input produces *"not computable"*, never a
-  number. The absence of a result and a result of zero are different things, and
-  a tool that blurs them will eventually be believed.
-- **Verify against something outside the code.** A manufacturer datasheet, a
-  second implementation written from scratch, a measurement. Anything that
-  doesn't share the original's assumptions.
-- **Warn, don't refuse.** The engineer using the tool usually understands their
-  own system better than the tool does.
 
 ## Background
 
