@@ -61,8 +61,11 @@ published here.
 **Erasmus+** — Politechnika Poznańska, Poland — Computing and Telecommunications
 Machine learning, NLP and digital signal processing coursework.
 
-Two industrial internships before that: data transmission pipelines and
-communication-device integration, and PLC/automation basics.
+Three internships along the way. One in RF test and field engineering at a SATCOM
+ground-station manufacturer — where the tools above came from. Two industrial
+ones before that: data transmission pipelines, communication-device integration,
+and PLC/automation basics. The unglamorous business of getting equipment to talk
+to each other, which turns out to be most of engineering.
 
 ## Tools
 
