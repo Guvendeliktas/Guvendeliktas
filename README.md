@@ -87,6 +87,12 @@ you don't need a cluster.
 > Team project with Evren Arslan and Halenur Polat, advised by
 > Dr. Saliha Büyükçorak Edibali.
 
+**The code for this one isn't on GitHub** — it's a team project and the dataset
+was collected on lab hardware, so it isn't mine alone to publish. If you want to
+dig into it, [email me](mailto:guvendeliktas@gmail.com): I'm glad to walk through
+the architecture, the training setup, the confusion matrices, or why the OFDM
+branch was the hard part.
+
 ---
 
 ## 📡 RF & SATCOM engineering tools
@@ -130,4 +136,5 @@ of engineering.
 📧 <guvendeliktas@gmail.com> · 💼 [linkedin.com/in/guven-deliktas](https://www.linkedin.com/in/guven-deliktas) · 📄 [IEEE Xplore](https://ieeexplore.ieee.org/document/11636794)
 
 Always happy to talk about RF, modulation, or why your link budget disagrees with
-your spectrum analyser.
+your spectrum analyser. The modulation classification work isn't published as a
+repo, but the paper is linked above and my inbox is open for the rest of it.
