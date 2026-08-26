@@ -1,14 +1,14 @@
 # Güven Deliktaş
 
-**Electronics engineer working across RF systems and machine learning.**
+**Electronics engineer. Signals at one end, machine learning at the other.**
 
-Two sides of the same problem, mostly. RF system engineering — link budgets,
-cascade analysis, spectrum measurements, SATCOM ground stations — and deep
-learning applied to signals captured from real hardware rather than simulated.
+I work between hardware and software: a spectrum analyser on one side, a
+training loop on the other, and a fair amount of Python holding the middle
+together. The problems I like usually start in the physical layer and end as
+something someone can actually run.
 
-I also keep turning calculations that live in a spreadsheet, and drawings that
-live in one engineer's head, into tools with a test suite. Three of those are
-below.
+I also have a habit of rebuilding the spreadsheet that everyone uses and nobody
+fully trusts. Whatever's pinned below is what that habit produced most recently.
 
 ---
 
@@ -37,9 +37,6 @@ lab hardware, so it isn't mine alone to put online.
 
 If you want the rest of it — the architecture, the results, why the OFDM branch
 was the hard part — [email me](mailto:guvendeliktas@gmail.com).
-
-*Team project with Evren Arslan and Halenur Polat, advised by
-Dr. Saliha Büyükçorak Edibali.*
 
 ---
 
@@ -77,3 +74,5 @@ communication-device integration, and PLC/automation basics.
 ## Get in touch
 
 📧 <guvendeliktas@gmail.com> · 💼 [linkedin.com/in/guven-deliktas](https://www.linkedin.com/in/guven-deliktas) · 📄 [IEEE Xplore](https://ieeexplore.ieee.org/document/11636794)
+
+Always happy to talk about RF, modulation, or why your link budget disagrees with your spectrum analyser. The modulation classification work isn't published as a repo, but the paper is linked above and my inbox is open for the rest of it.
